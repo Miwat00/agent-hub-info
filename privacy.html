@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Privacybeleid · Agent Hub</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f6f6f0;color:#1c3027;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}a{color:#176342;text-underline-offset:.2em}a:focus-visible{outline:3px solid #d09641;outline-offset:4px}header,main,footer{max-width:850px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;align-items:center;gap:24px;border-bottom:1px solid #d7ded7}header a{font-weight:600}main{padding-top:55px;padding-bottom:55px}h1{font-size:clamp(2rem,5vw,3.25rem);line-height:1.12;letter-spacing:-.035em;max-width:700px;margin:12px 0 24px}h2{font-size:1.3rem;margin-top:32px}p,li{max-width:720px}.eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#446350}.lead{font-size:1.2rem;color:#44594e}.note{padding:18px 24px;background:#eaf0e7;border-left:3px solid #418568;border-radius:0 12px 12px 0;margin:32px 0}footer{border-top:1px solid #d7ded7;color:#5b6d61;font-size:.9rem;padding-bottom:36px}code{font-size:.9em;overflow-wrap:anywhere}@media(max-width:500px){header{align-items:flex-start;flex-direction:column;gap:8px}main{padding-top:32px}}</style>
+</head>
+<body>
+<header><a href="index.html">Agent Hub</a><nav aria-label="Pagina’s"><a href="privacy.html">Privacybeleid</a></nav></header>
+<main><p class="eyebrow">Agent Hub</p>
+<h1>Privacybeleid</h1>
+<p class="lead">Agent Hub is ingericht voor persoonlijk gebruik op de eigen Raspberry Pi van de eigenaar. Gegevens worden alleen gebruikt om de eigenaar te helpen met zijn agenda, mail en notities.</p>
+<h2>Gegevens die worden gebruikt</h2>
+<p>Uit Google Agenda worden per afspraak de agenda, titel, begin- en eindtijd, locatie en status gelezen. Beschrijvingen en deelnemers worden niet opgeslagen.</p>
+<p>Uit Gmail worden afzender, onderwerp, datum, labels en de tekst van recente berichten gelezen, ingekort tot ongeveer 4000 tekens per bericht. Bijlagen worden niet opgehaald.</p>
+<h2>Doel en toegang</h2>
+<p>De gegevens worden uitsluitend gebruikt om de eigenaar overzichten, herinneringen en voorstellen te geven. De toepassing gebruikt <code>https://www.googleapis.com/auth/calendar</code> om afspraken te lezen en, alleen na uitdrukkelijk akkoord van de eigenaar, nieuwe afspraken in zijn eigen agenda te maken. Voor Gmail gebruikt ze <code>https://www.googleapis.com/auth/gmail.readonly</code>: alleen lezen. De toepassing verstuurt, wijzigt of verwijdert geen mail en geen bestaande afspraken.</p>
+<h2>Opslag en beveiliging</h2>
+<p>Afspraken, mail en de Google-sleutels worden lokaal op de Pi opgeslagen, in bestanden die alleen de eigen gebruiker kan lezen. Mail ouder dan 30 dagen wordt automatisch verwijderd. De Pi is niet vanaf internet bereikbaar.</p>
+<h2>Delen van gegevens</h2>
+<p>Om vragen van de eigenaar te beantwoorden, wordt een relevant deel van de gegevens per vraag naar een taalmodel van Anthropic gestuurd. Anthropic gebruikt deze API-gegevens volgens zijn eigen voorwaarden niet om modellen te trainen. Verder worden gegevens niet gedeeld, niet verkocht en niet gebruikt voor advertenties of profilering.</p>
+<p>Deze openbare informatiepagina bevat geen persoonlijke gegevens. GitHub Pages verwerkt de gebruikelijke bezoekgegevens volgens zijn eigen privacybeleid. Dat staat los van de toepassing op de Pi.</p>
+<h2>Bewaartermijn en verwijderen</h2>
+<p>Mail wordt na 30 dagen verwijderd. Afspraken worden bij elke synchronisatie ververst. De eigenaar kan de toegang op elk moment intrekken via zijn Google-account en de lokale bestanden op de Pi verwijderen.</p>
+<h2>Contact en wijzigingen</h2>
+<p>Voor vragen kan het ondersteuningsadres op het Google-toestemmingsscherm worden gebruikt. Dit beleid wordt bijgewerkt als de manier van gegevensgebruik verandert.</p>
+<p>Laatste wijziging: 31 oktober 2026.</p>
+<p><a href="index.html">Terug naar de homepage</a></p></main>
+<footer>Agent Hub · <a href="privacy.html">Privacybeleid</a> · Bijgewerkt op 31 oktober 2026</footer>
+</body>
+</html>
